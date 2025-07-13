@@ -75,10 +75,9 @@
       background: #444;
     }
 
-    /* Pricing container: full width, two equal columns per row */
     .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* equal width columns */
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
       margin-top: 2rem;
     }
@@ -124,7 +123,6 @@
       opacity: 0.9;
     }
 
-    /* 24h add-on box styling */
     .add-on-box {
       background: #ffffff;
       color: #222222;
@@ -135,12 +133,14 @@
       flex-direction: column;
       justify-content: center;
     }
+
     .add-on-inner {
       display: flex;
       align-items: flex-start;
       text-align: left;
       width: 100%;
     }
+
     .add-on-left {
       font-size: 1.5rem;
       font-weight: bold;
@@ -148,23 +148,22 @@
       line-height: 1.2;
       flex-shrink: 0;
     }
+
     .add-on-right {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+
     .add-on-label {
       font-size: 1.1rem;
       font-weight: bold;
     }
+
     .add-on-sub {
       font-size: 0.9rem;
       opacity: 0.9;
       font-weight: normal;
-    }
-
-    .before-after-section {
-      text-align: center;
     }
 
     .before-after-images {
@@ -191,27 +190,19 @@
 
     .content-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* equal width columns */
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
       margin-top: 2rem;
     }
 
-    /* This class makes the merged box span full width and removes background */
     .full-span {
       grid-column: 1 / -1;
-      background: #fff !important;
-      border-radius: 0 !important;
-      padding-left: 0;
-      padding-right: 0;
     }
 
     @media (max-width: 768px) {
       .pricing-grid,
       .content-grid {
-        grid-template-columns: 1fr; /* single column on mobile */
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        grid-template-columns: 1fr;
       }
 
       .before-after-images img {
@@ -226,9 +217,7 @@
       <h1>Maximize Your Property’s Value</h1>
       <h2>Feasibility Insights at Your Fingertips</h2>
 
-      <a href="https://yourcalendlylink.com" target="_blank" class="cta-button">
-        Book a 15min Call
-      </a>
+      <a href="https://yourcalendlylink.com" target="_blank" class="cta-button">Book a 15min Call</a>
 
       <div class="content-box" style="margin-top: 2rem;">
         <p>
@@ -241,7 +230,7 @@
       <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/73a56e1c3176b9001d5e4b32f4825cb3f4e07c54/IMG_4875.jpeg" alt="Site Feasibility Diagram" class="hero-img" />
     </header>
 
-    <!-- Pricing Grid -->
+    <!-- Pricing -->
     <div class="pricing-grid">
       <div class="price-box">
         <div class="price-box-inner">
@@ -284,9 +273,8 @@
       </div>
     </div>
 
-    <!-- Content Grid -->
+    <!-- Content -->
     <div class="content-grid">
-      <!-- Merged box spans two columns, white background -->
       <div class="content-box full-span">
         <h3>Get Ahead in the Market</h3>
         <p>
@@ -318,6 +306,16 @@
         <p>We know time kills deals — that's why 99% of our studies are delivered within 2 business days.</p>
       </div>
 
+      <div class="content-box full-span">
+        <h3>Which One Would You Pick?</h3>
+        <p>One of these listings gives developers everything they need. The other leaves them guessing.</p>
+        <div class="before-after-images">
+          <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_before.PNG" alt="Before" />
+          <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_after.PNG" alt="After" />
+        </div>
+        <p style="margin-top: 1rem;">One is clear and compelling. The other is time-consuming and vague.</p>
+      </div>
+
       <div class="content-box">
         <h3>Hands-Off Process for Agents</h3>
         <p>The process is built to save you time:</p>
@@ -334,22 +332,10 @@
         <p>If buyers or vendors have questions about the study — no stress. You can redirect them straight to us, free of charge. We’re happy to chat directly with your prospects so you don’t have to.</p>
       </div>
 
-      <div class="content-box">
-        <h3>Which One Would You Pick?</h3>
-        <p>One of these listings gives developers everything they need. The other leaves them guessing.</p>
-        <div class="before-after-images">
-          <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_before.PNG" alt="Before" />
-          <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_after.PNG" alt="After" />
-        </div>
-        <p style="margin-top: 1rem;">One is clear and compelling. The other is time-consuming and vague.</p>
-      </div>
-
-      <div class="content-box" style="text-align: center;">
+      <div class="content-box full-span" style="text-align: center;">
         <p style="font-size: 1.2rem;"><strong>Properties showing development potential sell faster and for more.</strong></p>
         <p>Don’t leave buyers guessing.</p>
-        <a href="https://yourcalendlylink.com" target="_blank" class="cta-button">
-          Book a 15min Call
-        </a>
+        <a href="https://yourcalendlylink.com" target="_blank" class="cta-button">Book a 15min Call</a>
       </div>
     </div>
 
