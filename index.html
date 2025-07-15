@@ -8,14 +8,14 @@
   <style>
     @font-face {
       font-family: 'Gilroy';
-      src: url('https://xangoat.github.io/fonts/Gilroy-Medium.woff2') format('woff2');
+      src: url('https://raw.githubusercontent.com/xangoat/xangoat.github.io/91038fb8a5d7d18be9a38b14cf9f3960f059e61d/fonts/Gilroy-Medium.woff2') format('woff2');
       font-weight: 500;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Gilroy';
-      src: url('https://xangoat.github.io/fonts/Gilroy-Bold.woff2') format('woff2');
+      src: url('https://raw.githubusercontent.com/xangoat/xangoat.github.io/91038fb8a5d7d18be9a38b14cf9f3960f059e61d/fonts/Gilroy-Bold.woff2') format('woff2');
       font-weight: 700;
       font-style: normal;
     }
@@ -43,6 +43,22 @@
       text-align: center;
       padding-top: 2rem;
     }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header h2 {
+      font-size: calc(1.5rem + 0.5vw);
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    p {
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 500;
+    }
+
 
     .hero-img {
       max-width: 100%;
@@ -94,7 +110,7 @@
 
     .price-box-inner {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       text-align: left;
       width: 100%;
     }
@@ -136,7 +152,7 @@
 
     .add-on-inner {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       text-align: left;
       width: 100%;
     }
@@ -188,6 +204,10 @@
       flex-direction: column;
     }
 
+    .content-box.no-bg {
+      background: #fff;
+    }
+
     .content-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -214,21 +234,25 @@
 <body>
   <div class="container">
     <header>
-      <h1>Maximize Your Property’s Value</h1>
-      <h2>Feasibility Insights at Your Fingertips</h2>
+    <h1 style="margin-bottom: 0.25rem;">Maximize Your Property’s Value</h1>
+    <h2 style="margin-top: 0;">Feasibility Insights at Your Fingertips</h2>
 
+    <div style="margin-top: 1rem;">
       <a href="https://yourcalendlylink.com" target="_blank" class="cta-button">Book a 15min Call</a>
+    </div>
 
-      <div class="content-box" style="margin-top: 2rem;">
-        <p>
-          Show <strong>developers</strong> what’s possible.<br />
-          Get <strong>sellers</strong> the highest price.<br />
-          Help <strong>agents</strong> close faster.
-        </p>
-      </div>
+    <div style="margin-top: 2rem;">
+      <p>
+        Show <strong>developers</strong> what’s possible.<br />
+        Get <strong>sellers</strong> the highest price.<br />
+        Help <strong>agents</strong> close faster.
+      </p>
+    </div>
 
-      <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/73a56e1c3176b9001d5e4b32f4825cb3f4e07c54/IMG_4875.jpeg" alt="Site Feasibility Diagram" class="hero-img" />
-    </header>
+    <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/73a56e1c3176b9001d5e4b32f4825cb3f4e07c54/IMG_4875.jpeg" alt="Site Feasibility Diagram" class="hero-img" />
+  </header>
+
+
 
     <!-- Pricing -->
     <div class="pricing-grid">
@@ -275,7 +299,7 @@
 
     <!-- Content -->
     <div class="content-grid">
-      <div class="content-box full-span">
+      <div class="full-span" style="margin-top: 1.5rem;">
         <h3>Get Ahead in the Market</h3>
         <p>
           Whether you're a developer, seller, or real estate agent, presenting clear development possibilities sets your property apart.
@@ -306,15 +330,25 @@
         <p>We know time kills deals — that's why 99% of our studies are delivered within 2 business days.</p>
       </div>
 
-      <div class="content-box full-span">
-        <h3>Which One Would You Pick?</h3>
-        <p>One of these listings gives developers everything they need. The other leaves them guessing.</p>
-        <div class="before-after-images">
-          <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_before.PNG" alt="Before" />
-          <img src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_after.PNG" alt="After" />
-        </div>
-        <p style="margin-top: 1rem;">One is clear and compelling. The other is time-consuming and vague.</p>
+      <div class="full-span" style="padding: 1.5rem 0;">
+      <h3>Which One Would You Pick?</h3>
+      <p>One of these listings gives developers everything they need. The other leaves them guessing.</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+        <img
+          src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_before.PNG"
+          alt="Before"
+          style="width: 100%; border-radius: 8px;"
+        />
+        <img
+          src="https://raw.githubusercontent.com/xangoat/xangoat.github.io/cedfe3fc5fb7f4087b7294f024e82a867f33d861/images/site_after.PNG"
+          alt="After"
+          style="width: 100%; border-radius: 8px;"
+        />
       </div>
+      <p style="margin-top: 1rem;">One is clear and compelling. The other is time-consuming and vague.</p>
+    </div>
+
+
 
       <div class="content-box">
         <h3>Hands-Off Process for Agents</h3>
@@ -332,7 +366,7 @@
         <p>If buyers or vendors have questions about the study — no stress. You can redirect them straight to us, free of charge. We’re happy to chat directly with your prospects so you don’t have to.</p>
       </div>
 
-      <div class="content-box full-span" style="text-align: center;">
+      <div class="content-box full-span no-bg" style="text-align: center;">
         <p style="font-size: 1.2rem;"><strong>Properties showing development potential sell faster and for more.</strong></p>
         <p>Don’t leave buyers guessing.</p>
         <a href="https://yourcalendlylink.com" target="_blank" class="cta-button">Book a 15min Call</a>
